@@ -1,0 +1,28 @@
+﻿// Sample Error formats
+
+
+{
+  "errors": [
+    {
+      "parameters": {
+        "tweet.fields": [
+          "public_metrics,entities.hashtags"
+        ]
+      },
+      "message": "The `tweet.fields` query parameter value [entities.hashtags] is not one of [attachments,author_id,context_annotations,conversation_id,created_at,edit_controls,edit_history_tweet_ids,entities,geo,id,in_reply_to_user_id,lang,non_public_metrics,organic_metrics,possibly_sensitive,promoted_metrics,public_metrics,referenced_tweets,reply_settings,source,text,withheld]"
+    }
+  ],
+  "title": "Invalid Request",
+  "detail": "One or more parameters to your request was invalid.",
+  "type": "https://api.twitter.com/2/problems/invalid-request"
+}
+
+
+
+
+{
+  "title": "ConnectionException",
+  "detail": "This stream is currently at the maximum allowed connection limit.",
+  "connection_issue": "TooManyConnections",
+  "type": "https://api.twitter.com/2/problems/streaming-connection"
+}
